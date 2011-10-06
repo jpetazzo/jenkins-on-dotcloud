@@ -1,0 +1,6 @@
+jenkins:
+    type: custom
+    buildscript: builder
+    ports:
+        www: http
+    process: java -jar /tmp/jenkins.war
