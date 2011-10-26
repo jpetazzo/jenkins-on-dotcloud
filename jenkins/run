@@ -1,0 +1,3 @@
+#!/bin/bash
+export JENKINS_HOME=~/data/jenkins
+java -jar ~/jenkins.war --httpPort=$PORT_WWW

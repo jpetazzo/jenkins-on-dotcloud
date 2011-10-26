@@ -1,0 +1,10 @@
+#!/bin/sh
+if [ -f ~/jenkins.war ]
+then
+	echo 'Found jenkins installation.'
+else
+	echo 'Installing jenkins.'
+	wget -O ~/jenkins.war http://ftp-chi.osuosl.org/pub/jenkins/war/1.433/jenkins.war
+fi
+echo 'Installing dotCloud scaffolding.'
+cp -a jenkins/. ~
